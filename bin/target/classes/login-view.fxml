@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="700.0" prefHeight="615.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yakub.gym_management_system.Controller.LoginPageController">
+   <children>
+      <Label layoutX="28.0" layoutY="34.0" prefHeight="24.0" prefWidth="76.0" text="Connection:" />
+      <VBox alignment="CENTER_LEFT" layoutX="514.0" prefHeight="600.0" prefWidth="299.0" spacing="40.0" style="-fx-background-color: white,            #b5b5b5,            linear-gradient(#fdfdfd, #e1e1e1),            linear-gradient(#eeeeee, #d9d9d9);;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" spacing="30.0">
+               <children>
+                  <Label text="User Name:" />
+                  <TextField fx:id="userNameTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="40.0">
+               <children>
+                  <Label text="Password:" />
+                  <TextField fx:id="passwordTextField" />
+               </children>
+            </HBox>
+            <Button fx:id="loginButton" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#login" text="Login">
+               <VBox.margin>
+                  <Insets left="190.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="dbStatus" layoutX="110.0" layoutY="37.0" />
+   </children>
+</AnchorPane>

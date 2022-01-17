@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="700.0" prefHeight="615.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yakub.gym_management_system.Controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="615.0" fitWidth="1027.0" layoutX="188.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-41.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@icons/gym-coronavirus.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="34.0" prefHeight="24.0" prefWidth="76.0" text="Connection:" />
+      <VBox alignment="CENTER_LEFT" layoutX="514.0" prefHeight="600.0" prefWidth="299.0" spacing="40.0" style="-fx-background-color: white,            #b5b5b5,            linear-gradient(#fdfdfd, #e1e1e1),            linear-gradient(#eeeeee, #d9d9d9);;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" spacing="30.0">
+               <children>
+                  <Label text="User Name:" />
+                  <TextField fx:id="userNameTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="40.0">
+               <children>
+                  <Label text="Password:" />
+                  <PasswordField fx:id="passwordTextField" />
+               </children>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="wrongPasswordLabel" prefHeight="18.0" prefWidth="167.0" textFill="#860202">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="93.0" text="Login" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="dbStatus" layoutX="110.0" layoutY="37.0" />
+      <Text fill="#d7eaff" layoutX="42.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM MANAGEMNET SYSTEM" wrappingWidth="317.314453125">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
