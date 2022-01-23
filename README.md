@@ -8,12 +8,14 @@ Project Covers:
 -SqLite local lite database integration
 
 
+# Login Page
 ![image](https://user-images.githubusercontent.com/67879777/150698936-5eca5a7c-767c-43b2-b830-2ae2170836dc.png)
 
 For Username: yakub 
 for Password: subasi
 
+# Dashboard page
 ![image](https://user-images.githubusercontent.com/67879777/150698944-c1423119-0c48-4daa-a7b5-9b6131072615.png)
 
-
+# Customer-List page
 ![image](https://user-images.githubusercontent.com/67879777/150698931-65757690-5cfd-4828-a777-3adfe6b80206.png)
